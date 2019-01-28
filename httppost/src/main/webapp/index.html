@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=utf-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <form id="API" name="API" action="/api/userinfo" method="post" ENCTYPE= "multipart/form-data">
+    	<span>userName :</span><input id="username" name="username" type="text" value=""/>
+    	<span>channelId :</span><input id="channelId" name="channelId" type="text" value=""/>
+        <br/>
+    	<input type="button" onclick="toebet()" value="登入" />
+
+    </form>
+
+    <script type="text/javascript">
+    	function toebet(){
+
+    		document.getElementById("API").submit();
+
+    	}
+    </script>
+    
+  </body>
+</html>
